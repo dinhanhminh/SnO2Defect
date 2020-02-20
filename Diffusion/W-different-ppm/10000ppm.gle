@@ -1,0 +1,35 @@
+size 7 6
+
+a = 0; b = 0; c = 0; d = 0; r = 0
+!include temperature.py
+range = 2e-6
+set texlabels 1
+begin graph
+   scale  auto
+   xtitle "1000/T (K$^{-1})$"
+   ytitle "D$_H$ (m$^2$/s)"
+   title "W:SnO$_2$"
+   !xaxis min 0 max 30 
+   !title  "$f(x) = a\sin(bx)+cx^2+d$"
+   !xaxis min 0  max 10
+   !yaxis min -4 max 14
+   xaxis dticks 0.4 min 0.6 max 1.85
+   yaxis log max 1e-9 min 1e-15
+   !xaxis min 0 max 3.75e-9
+   !yaxis min 0 max 250
+   !yaxis min 0 max 0.2
+   data   "10000ppm.txt" ! ignore 1
+   d1 line nomiss msize 0.15  marker fcircle color red key "10$^3$ ppm"
+   d2 line nomiss msize 0.15  marker fcircle color darkorange key "10$^4$ ppm"
+   d3 line nomiss msize 0.15  marker fcircle color darkkhaki key "10$^5$ ppm"
+	key compact pos tr
+end graph
+
+!fct$ = format$(a/1e20/6,"sci 2 10 expdigits 2")+" m$^2$/s"
+
+!begin key!
+	!pos tl
+	!text "D = "+fct$
+	!text "$r^2$ = "+format$(r,"fix 3")
+	!text "T = "+format$(temperature,"fix 0")+"K"
+!end key

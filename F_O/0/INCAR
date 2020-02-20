@@ -1,0 +1,50 @@
+# Full relaxation cell+ion 
+
+# General Setup
+  SYSTEM = SnO2              #Title
+  PREC   = Accurate               #Normal, Medium, High, Low
+  ENCUT  = 480                  #kinetic energy cutoff in eV
+  ISTART = 1                    #job : 0-new 1-cont 2-samecut
+  ICHARG = 2                    #charge: 1-file 2-atom 10-const
+  LWAVE  = .TRUE.              #TRUE-WAVECAR is written
+  LCHARG = .TRUE.               #TRUE-CHGCAR is written
+  ISPIN  = 1                    #spin polarized: 1-NO 2-YES
+
+# Electronic Relaxation (SCF)
+  NELM     = 60       # Max Number of Elec Self Cons Steps  
+    NELMIN = 2        # Min Number of ESC steps
+    NELMDL = -5       # Number of non-SC at the beginning  
+  EDIFF    = 1.0E-04  # Stopping criteria for ESC
+  LREAL    = .FALSE.   # Real space projection
+  IALGO    = 48       # Electronic algorithm minimization; 48: Reliable;
+#  VOSKOWN  = 0	      # 1- uses VWN exact correlation
+  ADDGRID  = .TRUE.   # Improve the grid accuracy
+
+#Ionic Relaxation
+  EDIFFG   = -1.0E-02   # Stopping criteria for ionic self cons steps. Negative value means max. force
+  NSW      = 100       # Max Number of ISC steps: 0- Single Point
+  IBRION   = 1        # 2-Conjugated Gradient, reliable for hard relaxation. 1-close to equil.
+  ISIF     = 2        # 3-cell+ion; 2-ion+stress;
+  POTIM	   = 0.1      #  time step for an ab-initio molecular dynamics 
+  SIGMA    = 0.10     # Insulators/semiconductors=0.1  metals=0.05 
+  ISMEAR   = 0        # Partial Occupancies for each Orbital
+                      # -5 DOS, -2 from file, -1 Fermi Smear, 0 Gaussian Smear    
+
+# DFT+U
+  LDAU      = .TRUE.
+  LDAUTYPE  = 2
+  LDAUL     = -1 2 -1
+  LDAUU     = 0.00 4.00 0.00
+  LDAUJ     = 0.00 0.00 0.00
+  LDAUPRINT = 2
+  LMAXMIX   = 4 
+
+#PARALLELIZATION
+ NPAR = 4                      
+# NCORE = 32
+ LPLANE = .TRUE.
+ LSCALU = .FALSE.
+ NSIM = 2
+
+
+NELECT = 417
