@@ -1,0 +1,41 @@
+tex {\normalsize $\mu_e$}
+tex {\footnotesize 0.0}
+tex {\footnotesize 0.4}
+tex {\footnotesize 0.8}
+tex {\normalsize $\mu_e$ (eV)}
+tex {\footnotesize $10^{-25}$}
+tex {\footnotesize $10^{-19}$}
+tex {\footnotesize $10^{-13}$}
+tex {\footnotesize $10^{-7}$}
+tex {\footnotesize $10^{-1}$}
+tex {\normalsize P$_{\mathrm{O2}}\ (\mathrm{atm})$}
+tex {\normalsize e}
+tex {\normalsize h}
+tex {\normalsize $H_{Sn}^{'''}$}
+tex {\normalsize $Zn_{i}^{\bullet\bullet}$}
+tex {\normalsize $Zn_{Sn}^{''}$}
+tex {\normalsize $Zn_{Sn}^{'''}$}
+tex {\normalsize $Zn_{Sn}^{''''}$}
+tex {\footnotesize $10^{-30}$}
+tex {\footnotesize $10^{-27}$}
+tex {\footnotesize $10^{-24}$}
+tex {\footnotesize $10^{-21}$}
+tex {\footnotesize $10^{-18}$}
+tex {\footnotesize $10^{-15}$}
+tex {\footnotesize $10^{-12}$}
+tex {\footnotesize $10^{-9}$}
+tex {\footnotesize $10^{-6}$}
+tex {\footnotesize $10^{-3}$}
+tex {\footnotesize 1}
+tex {\normalsize [C] (p.u.SnO$_2$)}
+tex {\footnotesize $10^{-20}$}
+tex {\footnotesize $10^{-10}$}
+tex {\footnotesize 1.2}
+tex {\normalsize $V_{O}^{\times}$}
+tex {\normalsize $V_{O}^{\bullet}$}
+tex {\normalsize $V_{O}^{\bullet\bullet}$}
+tex {\normalsize $H_{i}^{\bullet}$}
+tex {\normalsize $H_{O}^{\bullet}$}
+tex {\normalsize $H_{O}^{\times}$}
+tex {\normalsize $V_{Sn}^{''''}$}
+tex {\large 10000ppm Zn-doped, 600K}

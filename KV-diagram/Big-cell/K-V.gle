@@ -1,0 +1,106 @@
+a=10;b=12;
+size a b
+fileName$="K-V-Mn.txt"
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+amove 0.5 1
+begin graph
+   size 3*a/4 b/4
+   !scale auto
+   
+   xtitle "P$_{\mathrm{O2}}\ (\mathrm{atm})$"
+   ytitle "$\mu_e$ (eV)"
+   !title  "log$_10$P$_{O2}$ = 1 atm"
+   !xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	xaxis log ftick -25 dticks 6 min 1e-25 max 1   	
+	yaxis  dticks 0.4
+   data   fileName$ 
+   d1 line 
+ !  let d2 = fit d1 with a*x+b rsq r
+	key off
+ !key compact pos tr offset -0.1 0
+end graph
+rmove 0 b/5
+begin graph
+   size 3*a/4 1.5*b/2
+   !scale auto
+   
+!   xtitle "log$_{10}$\ P$_{\mathrm{O2}}$"
+   ytitle "[C] (p.u.SnO$_2$)"
+   title  "T = 1200 K"
+   xaxis log ftick -25 dticks 10 min 1e-30 max 1
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+   yaxis log nticks 9 max 1e-0 min 1e-30
+   data   fileName$
+ !  let d2 = fit d1 with a*x+b rsq r
+	d2 line color red
+	d3 line color blue
+	!d4 line color cyan lstyle 5
+	!d5 line color cyan lstyle 3
+	!d6 line color cyan
+	!d7 line 
+	!d8 line 
+	!d9 line
+	!d10 line
+	!d11 line color orange
+	!d12 line
+	!d13 line
+	!d14 line color orange 
+	!d15 line
+	!d16 line
+	!d17 line
+	!d18 line
+	!d19 line color green 
+	!d20 line 
+	!d21 line 
+	!d22 line color orange
+	!d23 line 
+	!d24 line 
+	!d25 line color purple
+	!d26 line color purple
+	!d27 line color purple
+	!d28 line color purple
+	!d29 line color purple
+	d30 line color orange lstyle 3
+	!d31 line color purple
+	!d32 line color purple
+	!d33 line color purple
+    d34 line color purple
+	d35 line lstyle 2 color purple
+	d36  line !color green
+	d37 line !color purple
+	d38 line !color green
+	d39 line !color purple lstyle 2
+	d40 line !color purple
+	!d41 line color purple
+	!d42 line lstyle 3 color purple
+	!d43 line color purple
+	!d44 line color purple
+	!d45 line color purple
+	!d47 line color purple
+	!d10 line color cyan key "$V_O^{\bullet\bullet}$"
+	!d26 line color red
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d36 line lstyle 3 color green key "$V_{Sn}^{''''}$"
+	!d42 line lstyle 3 color orange key "$H_{i}^{\bullet}$"
+	!d40 line color orange key "$H_{i}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{'''}$"
+	!d76 line color brown key "$In_{i}^{\bullet\bullet\bullet}$"
+	!d68 line lstyle 3 color brown key "$Rh_{Sn}^{\times}$"
+	!d82 line lstyle 3 color black key "$Ta_{Sn}^{'}$"
+	!d74 line lstyle 3 color brown key "$Zr_{Sn}^{'}$"
+	!d72 line lstyle 3 color red key "$Zr_{Sn}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{\bullet\bullet\bullet}$"
+	!d82 line lstyle 3 color red key "$Rh_{Sn}^{'}$"
+	!d76 line lstyle 3 color black key "$Rh_{Sn}^{\times}$"
+	!d78 line lstyle 3 color brown key "$Rh_{Sn}^{\bullet}$"
+ key compact pos tr offset -0.1 0
+end graph
+
+  

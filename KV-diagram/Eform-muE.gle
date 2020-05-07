@@ -1,0 +1,37 @@
+size 15 12
+
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+
+begin graph
+   scale auto
+   
+   xtitle "$\mu_e$ (eV)"
+   ytitle "E$_{form}$ (eV)"
+   title  "pO$_2$ = 1 atm"
+   xaxis min 0 max 4 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	yaxis min -2 max 5 nticks 4
+   data   "Evsmu_E.txt"
+ !  let d2 = fit d1 with a*x+b rsq r
+	d1 line color red
+	d2 line color red 
+	d3 line color red
+	d8 line color yellow
+	d9 line color orange
+	d10 line color orange
+	d11 line color orange
+	d12 line color orange
+	d13 line color orange
+	d14 line
+	d15 line 
+	d16 line 
+
+ 
+ key compact pos tr offset -0.1 0
+end graph
+
+  

@@ -1,0 +1,241 @@
+a=15;b=12;
+size a b
+
+lineDrawn= 1234
+maximumLog = int(log10(lineDrawn))+1
+element="V"
+tempe="600"
+conc=0.0001
+fileName$="K-V-" + element + "-" + tempe + "K-" + conc +".txt"
+i = 1
+titleTotal$=conc*1e6 + "ppm " + element + "-doped"
+
+set texlabels 1
+amove 5 11.5 
+
+set hei 0.6633
+write titleTotal$
+
+set hei 0.3633
+
+minX = 1e-25
+maxYmuE = 2.0
+
+
+amove 1 1
+begin graph
+   size 6 3
+   !scale auto
+   
+   xtitle "P$_{\mathrm{O2}}\ (\mathrm{atm})$"
+   ytitle "$\mu_e$ (eV)"
+   !title tempe+"K"
+   !title  "log$_10$P$_{O2}$ = 1 atm"
+   !xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	xaxis log ftick -25 dticks 10 min minX max 1   	
+	yaxis  dticks 0.5 min 0 max maxYmuE
+   data   fileName$ 
+   d1 line 
+ !  let d2 = fit d1 with a*x+b rsq r
+	key off
+ !key compact pos tr offset -0.1 0
+end graph
+
+
+rmove 0 12/5
+begin graph
+   size 6 9
+   !scale auto
+   
+!   xtitle "log$_{10}$\ P$_{\mathrm{O2}}$"
+   ytitle "[C] (p.u.SnO$_2$)"
+   !title  titleTotal$ 
+   xaxis log ftick -25 dticks 10 min minX max 1
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+   yaxis log max 1e-0 min 1e-30
+   ylabels off
+   
+   data   fileName$ 
+ !  let d2 = fit d1 with a*x+b rsq r
+	d2 line color red
+	d3 line color blue
+	!d4 line color cyan lstyle 5 ! V_O
+	d5 line color cyan lstyle 3
+	d6 line color cyan
+	d7 line color steelblue lstyle 5  ! O_i
+	!d8 line color steelblue lstyle 3
+	!d9 line color steelblue
+	!d10 line
+	!d11 line color orange
+	!d12 line
+	!d13 line
+	d14 line color mediumspringgreen 
+	!d15 line
+	!d16 line
+	!d17 line
+	!d18 line
+	d19 line color green ! V_Sn
+	!d20 line 
+	!d21 line 
+	d22 line color orange    ! H_i
+	!d23 line color purple  lstyle 5   ! H_O   
+	d24 line color purple  ! H_O
+	!d25 line color purple
+	!d26 line color purple
+	!d27 line color purple
+	!d28 line color purple
+	!d29 line color purple
+	d30 line color orange lstyle 3 ! H_Sn
+	!d31 line color purple
+	
+	!d32 line lstyle 2
+	!d33 line lstyle 2
+    !d34 line lstyle 2!color purple         
+	!d35 line lstyle 5 ! color purple     !M_Sn   
+	!d36 line lstyle 3 !color green
+	d37 line lstyle 5!color purple
+	d38 line lstyle 3 !color green 
+	!d39 line lstyle 3!color purple lstyle 2
+	!d40 line !color purple
+	!d41 line !color purple
+	!d42 line lstyle 5 
+	!d43 line color purple
+	!d44 line color purple
+	!d45 line color purple
+	!d47 line color purple
+	!d10 line color cyan key "$V_O^{\bullet\bullet}$"
+	!d26 line color red
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d36 line lstyle 3 color green key "$V_{Sn}^{''''}$"
+	!d42 line lstyle 3 color orange key "$H_{i}^{\bullet}$"
+	!d40 line color orange key "$H_{i}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{'''}$"
+	!d76 line color brown key "$In_{i}^{\bullet\bullet\bullet}$"
+	!d68 line lstyle 3 color brown key "$Rh_{Sn}^{\times}$"
+	!d82 line lstyle 3 color black key "$Ta_{Sn}^{'}$"
+	!d74 line lstyle 3 color brown key "$Zr_{Sn}^{'}$"
+	!d72 line lstyle 3 color red key "$Zr_{Sn}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{\bullet\bullet\bullet}$"
+	!d82 line lstyle 3 color red key "$Rh_{Sn}^{'}$"
+	!d76 line lstyle 3 color black key "$Rh_{Sn}^{\times}$"
+	!d78 line lstyle 3 color brown key "$Rh_{Sn}^{\bullet}$"
+	!key off
+ key off
+end graph
+
+rmove 2.65 12-12/5-2.35
+write tempe+"K"
+
+tempe="1200"
+fileName$="K-V-" + element + "-" + tempe + "K-" + conc +".txt"
+titleTotal$=conc*1e6 + "ppm " + element + "-doped, " + tempe + "K"
+
+
+
+amove 6.25 1
+begin graph
+   size 6 3
+   !scale auto
+   
+   xtitle "P$_{\mathrm{O2}}\ (\mathrm{atm})$"
+  ! ytitle "$\mu_e$ (eV)"
+   !title  tempe+"K"
+   !xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	xaxis log ftick -25 dticks 10 min minX max 1   	
+	yaxis  dticks 0.5 min 0 max maxYmuE
+   data   fileName$ 
+   d1 line 
+ !  let d2 = fit d1 with a*x+b rsq r
+	key off
+ !key compact pos tr offset -0.1 0
+end graph
+
+rmove 0 12/5
+begin graph
+   size 6 9
+   !scale auto
+   
+!   xtitle "log$_{10}$\ P$_{\mathrm{O2}}$"
+   !y2title "[C] (p.u.SnO$_2$)"
+   !title  titleTotal$ 
+   xaxis log ftick -25 dticks 10 min minX max 1
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+   yaxis log max 1e-0 min 1e-30
+   data   fileName$ 
+ !  let d2 = fit d1 with a*x+b rsq r
+	d2 line color red
+	d3 line color blue
+	!d4 line color cyan lstyle 5 ! V_O
+	d5 line color cyan lstyle 3
+	d6 line color cyan
+	d7 line color steelblue lstyle 5  ! O_i
+	!d8 line color steelblue lstyle 3
+	!d9 line color steelblue
+	!d10 line
+	!d11 line color orange
+	!d12 line
+	!d13 line
+	d14 line color mediumspringgreen 
+	!d15 line
+	!d16 line
+	!d17 line
+	!d18 line
+	d19 line color green ! V_Sn
+	!d20 line 
+	!d21 line 
+	d22 line color orange    ! H_i
+	!d23 line color purple  lstyle 5   ! H_O   
+	d24 line color purple  ! H_O
+	!d25 line color purple
+	!d26 line color purple
+	!d27 line color purple
+	!d28 line color purple
+	!d29 line color purple
+	d30 line color orange lstyle 3 ! H_Sn
+	!d31 line color purple
+	
+	!d32 line lstyle 2
+	!d33 line lstyle 2
+    !d34 line lstyle 2!color purple         
+	!d35 line lstyle 5 ! color purple     !M_Sn   
+	!d36 line lstyle 5 !color green
+	!d37 line lstyle 5!color purple
+	d38 line lstyle 5 !color green 
+	d39 line lstyle 3!color purple lstyle 2
+	d40 line lstyle 2!color purple
+	!d41 line !color purple
+	!d42 line lstyle 5 
+	!d43 line color purple
+	!d44 line lstyle 5!color purple
+	!d45 line lstyle 5
+	!d47 line color purple
+	!d10 line color cyan key "$V_O^{\bullet\bullet}$"
+	!d26 line color red
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d26 line color green key "$Sn_{i}^{\bullet\bullet\bullet\bullet}$"
+	!d36 line lstyle 3 color green key "$V_{Sn}^{''''}$"
+	!d42 line lstyle 3 color orange key "$H_{i}^{\bullet}$"
+	!d40 line color orange key "$H_{i}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{'''}$"
+	!d76 line color brown key "$In_{i}^{\bullet\bullet\bullet}$"
+	!d68 line lstyle 3 color brown key "$Rh_{Sn}^{\times}$"
+	!d82 line lstyle 3 color black key "$Ta_{Sn}^{'}$"
+	!d74 line lstyle 3 color brown key "$Zr_{Sn}^{'}$"
+	!d72 line lstyle 3 color red key "$Zr_{Sn}^{\times}$"
+	!d58 line color cyan key "$H_{Sn}^{\bullet\bullet\bullet}$"
+	!d82 line lstyle 3 color red key "$Rh_{Sn}^{'}$"
+	!d76 line lstyle 3 color black key "$Rh_{Sn}^{\times}$"
+	!d78 line lstyle 3 color brown key "$Rh_{Sn}^{\bullet}$"
+	!key off
+ key compact pos tr offset -0.1 0
+end graph
+
+rmove 2.5 12-12/5-2.35
+write tempe+"K"

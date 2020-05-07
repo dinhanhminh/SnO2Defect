@@ -1,0 +1,20 @@
+Co: Co_Sn^4
+Cr: Cr_Sn^0 
+Cu: Cu_i^1 Cu_Sn^-1
+F: F_O^X F_O^1
+In: In_Sn^-1
+Mn: Mn_Sn^0
+Mo: Mo_Sn^0
+Nb: Nb_Sn^1 Nb_Sn^0
+Ni: Ni_Sn^0
+Pd: Pd_Sn^0
+Rh: Rh_Sn^0
+Sb: Sb_Sn^0
+Sn:
+Ta: Ta_Sn^0 Ta_Sn^1
+Ti: Ti_Sn^0
+V: V_Sn^0 V_Sn^1 V_Sn^-1
+W: W_Sn^0 W_Sn1
+Zn: Zn_i^2 Zn_Sn^-2
+Zr: Zr_Sn^0
+

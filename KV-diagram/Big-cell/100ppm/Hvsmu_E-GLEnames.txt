@@ -1,0 +1,162 @@
+set color blue
+amove xg( 0.19349 ) yg( 6.645e-15 )
+text  Co
+set color red
+amove xg( 0.33451 ) yg( 1.6182e-09 )
+text  Co
+set color green
+amove xg( 0.50866 ) yg( 6.3248e-07 )
+text  Co
+set color blue 
+amove xg( 0.99834 ) yg( 1.1537e-21 )
+text  Cr
+set color red 
+amove xg( 1.0702 ) yg( 1.2277e-13 )
+text  Cr
+set color green 
+amove xg( 1.1529 ) yg( 1.2455e-09 )
+text  Cr
+set color blue 
+amove xg( 0.29384 ) yg( 9.5426e-19 )
+text  Cu
+set color red 
+amove xg( 0.54808 ) yg( 1.0305e-13 )
+text  Cu
+set color green 
+amove xg( 0.89595 ) yg( 2.9409e-09 )
+text  Cu
+set color blue 
+amove xg( 1.8546 ) yg( 4.6765e-23 )
+text  F
+set color red 
+amove xg( 1.997 ) yg( 1.952e-17 )
+text  F
+set color green 
+amove xg( 2.0538 ) yg( 6.5564e-13 )
+text  F
+set color blue 
+amove xg( 0.18648 ) yg( 7.6109e-15 )
+!text  In
+set color red 
+amove xg( 0.33027 ) yg( 1.709e-09 )
+!text  In
+set color green 
+amove xg( 0.49552 ) yg( 7.1816e-07 )
+!text  In
+set color blue 
+amove xg( 0.60574 ) yg( 2.2898e-18 )
+text  Mn
+set color red 
+amove xg( 0.65065 ) yg( 2.7462e-11 )
+text  Mn
+set color green 
+amove xg( 0.7309 ) yg( 7.3731e-08 )
+text  Mn
+set color blue 
+amove xg( 1.5971 ) yg( 1.1274e-26 )
+text  Mo
+set color red 
+amove xg( 1.6335 ) yg( 8.6172e-17 )
+text  Mo
+set color green 
+amove xg( 1.6365 ) yg( 1.1632e-11 )
+text  Mo
+set color blue 
+amove xg( 1.7946 ) yg( 4.6777e-26 )
+text  Nb
+set color red 
+amove xg( 1.9072 ) yg( 1.9675e-19 )
+text  Nb
+set color green 
+amove xg( 2.0251 ) yg( 6.6503e-16 )
+text  Nb
+set color blue 
+amove xg( 0.66051 ) yg( 1.7209e-21 )
+text  Ni
+set color red 
+amove xg( 0.69272 ) yg( 1.5964e-14 )
+text  Ni
+set color green 
+amove xg( 0.77843 ) yg( 4.6565e-11 )
+text  Ni
+set color blue 
+amove xg( 1.0326 ) yg( 5.948e-25 )
+text  Pd
+set color red 
+amove xg( 1.1044 ) yg( 7.8988e-17 )
+text  Pd
+set color green 
+amove xg( 1.1871 ) yg( 8.9497e-13 )
+text  Pd
+set color blue 
+amove xg( 0.39914 ) yg( 2.6983e-16 )
+text  Rh
+set color red 
+amove xg( 0.50077 ) yg( 4.1112e-11 )
+text  Rh
+set color green 
+amove xg( 0.55528 ) yg( 9.0294e-10 )
+text  Rh
+set color blue 
+amove xg( 1.4731 ) yg( 1.1872e-25 )
+text  Sn
+set color red 
+amove xg( 1.5922 ) yg( 1.4666e-19 )
+text  Sn
+set color green 
+amove xg( 1.7197 ) yg( 5.2237e-15 )
+text  Sn
+set color blue 
+amove xg( 1.7946 ) yg( 4.6786e-23 )
+!text  Ta
+set color red 
+amove xg( 1.9074 ) yg( 1.9832e-16 )
+!text  Ta
+set color green 
+amove xg( 2.0266 ) yg( 6.7708e-13 )
+!text  Ta
+set color blue 
+amove xg( 1.2982 ) yg( 3.4969e-24 )
+text  Ti
+set color red 
+amove xg( 1.35 ) yg( 2.5731e-15 )
+text  Ti
+set color green 
+amove xg( 1.4525 ) yg( 6.8725e-14 )
+text  Ti
+set color blue 
+amove xg( 1.3913 ) yg( 5.7779e-25 )
+text  V
+set color red 
+amove xg( 1.3913 ) yg( 1.9566e-18 )
+text  V
+set color green 
+amove xg( 1.3916 ) yg( 1.2391e-10 )
+text  V
+set color blue 
+amove xg( 1.7445 ) yg( 4.6476e-23 )
+text  W
+set color red 
+amove xg( 1.9045 ) yg( 1.7741e-16 )
+text  W
+set color green 
+amove xg( 1.9745 ) yg( 5.997e-13 )
+text  W
+set color blue 
+amove xg( 0.19555 ) yg( 6.3864e-18 )
+text  Zn
+set color red 
+amove xg( 0.38042 ) yg( 8.9516e-13 )
+text  Zn
+set color green 
+amove xg( 0.61704 ) yg( 3.2647e-07 )
+text  Zn
+set color blue 
+amove xg( 1.3481 ) yg( 1.3308e-27 )
+text  Zr
+set color red 
+amove xg( 1.45 ) yg( 1.3513e-15 )
+text  Zr
+set color green 
+amove xg( 1.5024 ) yg( 4.2441e-11 )
+text  Zr

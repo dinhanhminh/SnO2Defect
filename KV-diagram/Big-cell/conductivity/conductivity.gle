@@ -1,0 +1,65 @@
+a=10;b=6;
+size a b
+
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+begin graph
+   scale auto
+   
+   ytitle "Conductivity (S/cm)"
+   xtitle "$\mu_e$ (eV)"
+   !title  "log$_10$P$_{O2}$ = 1 atm"
+   !xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	!xaxis log !ftick -25 dticks 6 !min 10e-25 max 1                                                                 
+	!yaxis nticks 4 dticks 0.2
+	xaxis dticks 0.4 min 0 max 2
+	yaxis log dticks 5 min 10e-26 max 10e-4
+   data   "conductivity.txt" !ignore 1
+   !d2 marker fcircle msize 0.2 color blue
+   d1 line marker fcircle msize 0.2 color red
+   !d4 marker fcircle msize 0.2 color green 
+
+ !  let d2 = fit d1 with a*x+b rsq r
+	
+ key compact pos bl
+end graph
+
+set just bc
+set color red
+!include "Hvsmu_E-GLEnames.txt"
+amove xg( 0.054365 ) yg( 2.9618e-21 )
+text  Co
+amove xg( 0.89017 ) yg( 3.1046e-17 )
+text  Cr
+amove xg( 0.29049 ) yg( 2.8504e-19 )
+text  Cu
+amove xg( 1.8541 ) yg( 3.8786e-07 )
+!text  F
+amove xg( 0.59964 ) yg( 1.1263e-16 )
+text  Mn
+amove xg( 1.6295 ) yg( 5.0319e-08 )
+text  Mo
+amove xg( 1.8541 ) yg( 3.8797e-07 )
+!text  Nb
+amove xg( 0.50145  ) yg( 1.6861e-20 )
+text  Ni
+amove xg( 0.91354 ) yg( 4.8789e-14 )
+text  Pd
+amove xg( 0.26501 ) yg( 1.7414e-22 )
+text  Rh
+amove xg( 1.4731 ) yg( 2.4445e-9 )
+text  Sn
+amove xg( 1.1791  ) yg( 8.2984e-15 )
+text  Ti
+amove xg( 1.3913 ) yg( 5.0225e-10 )
+text  V
+amove xg( 1.7938 ) yg(  3.8537e-06  )
+text  W, Nb, F
+amove xg( 0.1841 ) yg( 3.6418e-20 )
+text  Zn
+amove xg( 1.2291 ) yg( 2.1806e-11 )
+text  Zr

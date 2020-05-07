@@ -1,0 +1,16 @@
+tex {\footnotesize $10^{-27}$}
+tex {\footnotesize $10^{-22}$}
+tex {\footnotesize $10^{-17}$}
+tex {\footnotesize $10^{-12}$}
+tex {\footnotesize $10^{-7}$}
+tex {\normalsize [H]}
+tex {\footnotesize 0.0}
+tex {\footnotesize 0.4}
+tex {\footnotesize 0.8}
+tex {\footnotesize 1.2}
+tex {\footnotesize 1.6}
+tex {\footnotesize 2.0}
+tex {\normalsize $\mu_e$ (eV)}
+tex {\normalsize 600K}
+tex {\normalsize 900K}
+tex {\normalsize 1200K}

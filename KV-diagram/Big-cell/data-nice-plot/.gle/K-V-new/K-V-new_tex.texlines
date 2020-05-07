@@ -1,0 +1,34 @@
+tex {\normalsize $\mu_e$}
+tex {\footnotesize 0.0}
+tex {\normalsize $\mu_e$ (eV)}
+tex {\footnotesize $10^{-30}$}
+tex {\footnotesize $10^{-20}$}
+tex {\footnotesize $10^{-10}$}
+tex {\footnotesize 1}
+tex {\normalsize P$_{\mathrm{O2}}\ (\mathrm{atm})$}
+tex {\normalsize e}
+tex {\normalsize h}
+tex {\normalsize $V_{O}^{\bullet\bullet}$}
+tex {\normalsize $V_{Sn}^{''''}$}
+tex {\normalsize $H_{i}^{\bullet}$}
+tex {\normalsize $H_{O}^{\bullet}$}
+tex {\normalsize $H_{Sn}^{'''}$}
+tex {\normalsize 600K}
+tex {\normalsize 1200K}
+tex {\normalsize $O_{i}^{\times}$}
+tex {\normalsize $Sn_{i}^{\bullet\bullet\bullet\bullet}$}
+tex {\footnotesize $10^{-25}$}
+tex {\footnotesize $10^{-15}$}
+tex {\footnotesize $10^{-5}$}
+tex {\normalsize [C] (p.u.SnO$_2$)}
+tex {\footnotesize 0.5}
+tex {\footnotesize 1.0}
+tex {\footnotesize 1.5}
+tex {\footnotesize 2.0}
+tex {\normalsize $V_{O}^{\bullet}$}
+tex {\footnotesize 2.5}
+tex {\footnotesize 3.0}
+tex {\normalsize $F_{i}^{'}$}
+tex {\normalsize $F_{O}^{\times}$}
+tex {\normalsize $F_{O}^{\bullet}$}
+tex {\LARGE 100ppm F-doped}

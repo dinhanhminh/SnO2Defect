@@ -1,0 +1,94 @@
+a=10;b=6;
+size a b
+
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+begin graph
+   scale auto
+   
+   ytitle "[H]"
+   xtitle "$\mu_e$ (eV)"
+   !title  "log$_10$P$_{O2}$ = 1 atm"
+   !xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	!xaxis log !ftick -25 dticks 6 !min 10e-25 max 1                                                                 
+	!yaxis nticks 4 dticks 0.2
+	xaxis dticks 0.4 min 0 max 2.3
+	yaxis log dticks 5 min 10e-28 max 10e-4
+   data   "Hvsmu_E.txt" !ignore 1
+   d2 marker fcircle msize 0.2 color blue
+   d3 marker fcircle msize 0.2 color red
+   d4 marker fcircle msize 0.2 color green 
+   data   "Hvsmu_E-full.txt" !ignore 1
+   d6 line nomiss color blue key ""
+   d7 line nomiss color red key ""
+   d8 line nomiss color green key ""
+ !  let d2 = fit d1 with a*x+b rsq r
+	
+ key compact pos bl
+end graph
+
+set just bc
+
+! amove xg( 0.18648 ) yg( 4.6311e-15 )
+! text  In
+! amove xg( 0.33027 ) yg( 1.2272e-09 )
+! text  In
+! amove xg( 0.4955 ) yg( 5.603e-07 )
+! text  In
+! amove xg( 0.60791 ) yg( 1.3361e-18 )
+! text  Mn
+! amove xg( 0.65719 ) yg( 1.8123e-11 )
+! text  Mn
+! amove xg( 0.73851 ) yg( 5.3434e-08 )
+! text  Mn
+! !amove xg( 1.5737 ) yg( 2.0993e-23 )
+! !text  Nb
+! !amove xg( 1.6867 ) yg( 1.4688e-16 )
+! !text  Nb
+! !amove xg( 1.8081 ) yg( 1.9924e-12 )
+! !text  Nb
+! amove xg( 1.0415 ) yg( 3.0487e-22 )
+! text  Pd
+! amove xg( 1.1133 ) yg( 5.0589e-14 )
+! text  Pd
+! amove xg( 1.1959 ) yg( 6.408e-10 )
+! text  Pd
+! amove xg( 0.36808 ) yg( 1.3814e-16 )
+! text  Rh
+! amove xg( 0.44871 ) yg( 2.6651e-10 )
+! text  Rh
+! amove xg( 0.60097 ) yg( 2.9749e-07 )
+! text  Rh
+! !amove xg( 1.5737 ) yg( 2.0993e-23 )
+! !text  Sb
+! !amove xg( 1.6866 ) yg( 1.4663e-16 )
+! !text  Sb
+! !amove xg( 1.8073 ) yg( 1.9995e-12 )
+! !text  Sb
+! amove xg( 1.5737 ) yg( 2.0994e-23 )
+! text  Nb,Sb,Ta
+! amove xg( 1.6867 ) yg( 1.4694e-16 )
+! text  Nb,Sb,Ta
+! amove xg( 1.8083 ) yg( 1.9902e-12 )
+! text  Nb,Sb,Ta
+! amove xg( 1.2391 ) yg( 2.5346e-24 )
+! !text  Ti
+! amove xg( 1.3457 ) yg( 1.7167e-15 )
+! text  Ti
+! amove xg( 1.4305 ) yg( 4.9616e-11 )
+! text  Ti
+! amove xg( 1.3553 ) yg( 5.2482e-25 )
+! text  Ti,Zr,Sn
+! amove xg( 1.4539 ) yg( 1.1933e-15 )
+! text  Zr
+! amove xg( 1.554 ) yg( 3.257e-11 )
+! text  Zr
+! amove xg( 1.4539 ) yg( 1.1933e-18 )
+! text  Sn
+! amove xg( 1.554 ) yg( 3.257e-14 )
+! text  Sn
+include "Hvsmu_E-GLEnames.txt"

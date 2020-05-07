@@ -1,0 +1,25 @@
+size 9 6
+
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+begin graph
+   scale auto
+   
+   xtitle "[F]"
+   ytitle "[H]"
+   title  "pO$_2$ = 1 atm, T = 600K"
+   xaxis log 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	yaxis log min 1e-24
+   data   "F-H.txt" ignore 6
+	d1 line marker fcircle color blue key "Doped"
+	let d2 = 3.4218*10^-24
+	d2 line color red key "Undoped"
+	
+ 
+ key compact pos tl
+end graph
+rmove 0 6 

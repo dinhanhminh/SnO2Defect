@@ -1,0 +1,57 @@
+size 10 6
+
+D1="$H_i$"; D2="$H_O$"
+
+set texlabels 1
+
+
+begin graph
+   scale auto
+   
+   xtitle "$\mu_e$ (eV)"
+   ytitle "E$_{form}$ (eV)"
+   title  "pO$_2$ = 1 atm"
+   xaxis min 0 max 2 nticks 4 
+!   yaxis dticks 5000 min 0 max 15000
+!   yaxis min -4 max 14
+	yaxis min 0 max 8 nticks 4
+   data   "Eform-muE.txt"
+ !  let d2 = fit d1 with a*x+b rsq r
+	for alpha = 1 to 28
+		if alpha = 2 then 
+		else if (alpha = 1) or (alpha = 3)  then
+		d[alpha] line color rgb(1,0,0) 
+		else if (alpha = 5) or (alpha = 6) then
+		else if (alpha = 4)   then
+		d[alpha] line color rgb(0,0,1) 
+		else if (alpha = 7) or (alpha = 8) or  (alpha = 9) or (alpha = 10) then 
+		!d[alpha] line color rgb(0,1,1) 
+		else if (alpha = 11)  then
+		d[alpha] line color rgb(0,1,1) 
+		else if  (alpha = 12) or  (alpha = 13) or (alpha = 14) then
+		else if (alpha = 15) then 
+		d[alpha] line color rgb(0,0,0)
+		else if (alpha = 16) then 
+		d[alpha] line color rgb(0,0,0) 
+		else if (alpha = 17) or  (alpha = 18) then 
+		else if (alpha = 19) then 
+		d[alpha] line color rgb(0,1,0) 
+		else if (alpha = 20) or  (alpha = 23)or  (alpha = 22) then 
+		else if (alpha = 21) then 
+		d[alpha] line color rgb(0,0.5,0.5) 
+		else if (alpha = 24) or  (alpha = 25) or  (alpha = 26) or  (alpha = 28) then
+		else if (alpha = 27) then 
+		d[alpha] line color rgb(1,0,0.5) 
+		
+		else 
+		
+       d[alpha] line color black
+	   end if
+    next alpha
+
+
+ 
+ key compact pos tr offset -0.1 0
+end graph
+
+  

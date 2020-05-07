@@ -1,0 +1,54 @@
+amove xg( 0.054365 ) yg( 2.3088e-05 )
+text  Co
+amove xg( 0.24201 ) yg( 94.4349 )
+text  Co
+amove xg( 0.44386 ) yg( 181670.1715 )
+text  Co
+amove xg( 0.89017 ) yg( 2.2026e-12 )
+text  Cr
+amove xg( 0.90661 ) yg( 0.017929 )
+text  Cr
+amove xg( 0.93072 ) yg( 1638.9496 )
+text  Cr
+amove xg( 0.31049 ) yg( 8.399e-10 )
+text  Cu
+amove xg( 0.54565 ) yg( 1.8829 )
+text  Cu
+amove xg( 0.82357 ) yg( 4619.2361 )
+text  Cu
+amove xg( 1.8541 ) yg( 1.763e-20 )
+text  F
+
+amove xg( 0.59964 ) yg( 6.0712e-10 )
+text  Mn
+amove xg( 0.60061 ) yg( 0.927 )
+text  Mn
+amove xg( 0.60497 ) yg( 38253.5886 )
+text  Mn
+amove xg( 1.6295 ) yg( 1.3589e-18 )
+text  Mo
+
+amove xg( 0.28501 ) yg( 3.9268e-07 )
+text  Rh
+amove xg( 0.28001 ) yg( 57.8551 )
+text  Rh
+amove xg( 0.30524 ) yg( 694163.1284 )
+text  Rh
+amove xg( 1.4708 ) yg( 2.9213e-17 )
+text  Sb
+
+amove xg( 1.1491 ) yg( 8.2401e-15 )
+text  Ti
+
+amove xg( 1.3913 ) yg( 1.3615e-16 )
+text  V
+
+amove xg( 1.8538 ) yg( 1.7744e-23 )
+text  W
+
+amove xg( 0.1841 ) yg( 1.8777e-06 )
+text  Zn
+
+amove xg( 1.2291 ) yg( 3.1359e-18 )
+text  Zr
+
